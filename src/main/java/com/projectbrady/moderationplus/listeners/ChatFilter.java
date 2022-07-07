@@ -24,13 +24,9 @@ public class ChatFilter implements Listener {
         Player p = e.getPlayer();
         String msg = ChatColor.stripColor(e.getMessage());
 
-        System.out.println("Debug 1 ");
         if(this.wordManager.isBanned(msg)) {
-            System.out.println("Debug 2 ");
             p.sendMessage(Main.plugin.getConfig().getString("Messages.FilterTrigger"));
-            System.out.println("Debug 3 ");
             e.setCancelled(true);
-            System.out.println("Debug 4 ");
         }
 
     }
