@@ -1,7 +1,6 @@
 package com.projectbrady.moderationplus;
 
 import com.projectbrady.moderationplus.listeners.ChatFilter;
-import com.projectbrady.moderationplus.listeners.SignFilter;
 import com.projectbrady.moderationplus.util.FilteredWordManager;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
@@ -33,7 +32,6 @@ public final class Main extends JavaPlugin implements Listener {
 
         pluginManager.registerEvents(this, this);
         pluginManager.registerEvents(new ChatFilter(filteredWordManager), this);
-        pluginManager.registerEvents(new SignFilter(), this);
 
         //register commands
 //        getCommand("blacklist").setExecutor(new SetBannedWords());
