@@ -1,0 +1,14 @@
+Settings: #ModerationPlus Settings.
+  filterEnabled: true #Set to false if you wish to disable the chat filter.
+  enableMute: false #Set to true if you wish to mute anyone who uses a blacklisted word.
+  muteSeconds: 30 #Set the amount of seconds you wish to mute someone who uses a blacklisted word.
+
+Messages: #Messaging format to respond to players.
+  FilterTrigger: "§c Please do not swear!"
+  NoPermission: "§c You do not have permission!"
+  Seconds: "§c seconds left!"
+  Config: "§c Config reloaded!"
+
+Blacklisted: #Add any words you wish to blacklist from your server. Make sure to add a TWO space indent and "-" before each word.
+  - stupid
+  - dumb
