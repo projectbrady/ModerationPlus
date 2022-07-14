@@ -2,7 +2,6 @@ package com.projectbrady.moderationplus.util;
 
 import com.projectbrady.moderationplus.Main;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

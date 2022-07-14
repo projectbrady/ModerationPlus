@@ -4,10 +4,3 @@ main: com.projectbrady.moderationplus.Main
 api-version: 1.19
 authors: [ ProjectBrady ]
 description: A 1.19 Spigot plugin used to moderate chat
-website: BradyWemette.com
-
-commands:
-  configreload:
-    description: Reloads the ModerationPlus config
-  bannedwords:
-    description: Lists the blacklisted words

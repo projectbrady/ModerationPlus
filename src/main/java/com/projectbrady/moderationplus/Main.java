@@ -3,13 +3,10 @@ package com.projectbrady.moderationplus;
 import com.projectbrady.moderationplus.listeners.ChatFilter;
 import com.projectbrady.moderationplus.util.FilteredWordManager;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.List;
 
 public final class Main extends JavaPlugin implements Listener {
 
@@ -34,7 +31,6 @@ public final class Main extends JavaPlugin implements Listener {
         pluginManager.registerEvents(new ChatFilter(filteredWordManager), this);
 
         //register commands
-//        getCommand("blacklist").setExecutor(new SetBannedWords());
 
         plugin.getConfig().options().copyDefaults();
         plugin.saveDefaultConfig();
@@ -46,22 +42,6 @@ public final class Main extends JavaPlugin implements Listener {
         // Plugin shutdown logic
         System.out.println("[ModerationPlus] has been shutdown");
     }
-
-
-
-    /*
-        Plugin attributes & executables
-
-        - public chat formatting
-        - system alert formatting
-        - moderation tools
-        - administration tools
-        - config compatibility
-        - player to player messaging
-        - player to player message settings
-        - staff overview of player to player messages
-
-     */
 
 
 }
