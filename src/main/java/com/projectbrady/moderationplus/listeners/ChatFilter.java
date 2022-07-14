@@ -25,7 +25,7 @@ public class ChatFilter implements Listener {
         String msg = ChatColor.stripColor(e.getMessage());
 
         if(this.wordManager.isBanned(msg)) {
-            p.sendMessage(Main.plugin.getConfig().getString("Messages.FilterTrigger".replace("&", "§")));
+            p.sendMessage(Main.plugin.getConfig().getString("Messages.FilterTrigger").replace("&", "§"));
             e.setCancelled(true);
         }
 

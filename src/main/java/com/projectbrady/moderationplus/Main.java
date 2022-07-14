@@ -38,7 +38,6 @@ public final class Main extends JavaPlugin implements Listener {
 
         plugin.getConfig().options().copyDefaults();
         plugin.saveDefaultConfig();
-        plugin.saveConfig();
         filteredWordManager.reloadFromConfig();
 
     }
